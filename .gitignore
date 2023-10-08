@@ -1,0 +1,6 @@
+.idea/
+cmake-*/
+build/
+.vscode/
+.fleet/
+ThirdParty/WebGPU-Cpp/
