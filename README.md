@@ -2,9 +2,17 @@
 
 ## Requirements
 
-1. Install [vcpkg](https://github.com/microsoft/vcpkg/blob/master/README.md) [中文](https://github.com/microsoft/vcpkg/blob/master/README_zh_CN.md)
-2. Generating cmake files with flag `-DCMAKE_TOOLCHAIN_FILE=/PATH/TO/vcpkg/scripts/buildsystems/vcpkg.cmake`
-3. Install required packages
+1. Install [vcpkg](https://github.com/microsoft/vcpkg/blob/master/README.md) [安装vcpkg](https://github.com/microsoft/vcpkg/blob/master/README_zh_CN.md)
+
+2. Generating cmake files with flag 
+   添加vcpkg为CMake工具链文件
+
+```bash
+-DCMAKE_TOOLCHAIN_FILE=/PATH/TO/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
+
+3. Install required packages 
+   安装所需依赖
 
 ```bash
 vcpkg install glfw3:x64-windows
